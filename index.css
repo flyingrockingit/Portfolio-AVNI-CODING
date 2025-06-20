@@ -1,10 +1,44 @@
+body{
+  height:100vh
+}
 .profile-img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
-
+.myanimatedname{
+  font-size: 5rem;
+  font-weight: bolder;
+  position: relative;
+  z-index: 2;
+  color: rgb(0, 153, 255);
+  animation: wave 2s ease-in-out forwards;
+  opacity: 0;
+}
+.myanimatedname7{
+  position: relative;
+  z-index: 2;
+  color: rgb(0, 153, 255);
+  animation: wave 2s ease-in-out forwards;
+}
+@keyframes wave{
+  0%{
+    transform:translateY(50px);
+    opacity:0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+#Hero {
+  background-image: url('WIN_20230316_20_23_17_Pro.jpg');
+  background-size:cover;
+  background-position:center;
+  min-height:100vh;
+  animation:wave 2s ease-in-out forwards;
+}
 footer {
   background-color: #f8f9fa;
   padding: 20px 0;

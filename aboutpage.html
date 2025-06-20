@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>About Me - Avni Roy</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold text-primary d-flex align-items-center gap-2" href="index.html">
-        <img src="WhatsApp Image 2025-06-18 at 17.26.23_09fa2920.jpg" alt="Profile" class="profile-img img-fluid">
+        <img src="WhatsApp Image 2025-06-18 at 17.26.23_09fa2920.jpg" alt="Profile" class="profile-img img-fluid" style="height: 40px; width: 40px; object-fit: cover; border-radius: 50%;">
         AVNI Portfolio
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -20,19 +22,53 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Homepage</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutpage.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Homepage</a></li>
+          <li class="nav-item"><a class="nav-link active" href="aboutpage.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- About Section -->
+  <div class="container my-5 pt-5">
+    <h2 class="text-center mb-5 fw-bold">Want to Know Me Better!</h2>
+
+    <!-- Section 1: Text Left, Image Right -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h3 class="fw-bold">"Life is like debugging; it takes patience and persistence"</h3>
+        <p>My name is Avni Roy, and I just turned 18 years old (sometime currently!). As quoted above — that’s all I could say. This portfolio represents not just my school projects, but also my curiosity, growth, and the chaos of juggling an active personal life.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="POA.jpg" alt="Avni's Photo" class="img-fluid rounded shadow" height="200">
+      </div>
+    </div>
+
+    <!-- Section 2: Image Left, Text Right -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <h3 class="fw-bold">🎨 A Creative Coder</h3>
+        <p>I enjoy making websites that feel alive — full of color, movement, and fun. Whether it's tweaking styles in CSS or exploring Bootstrap components, I love adding personality to every page I build.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/creative.jpg" alt="Creative Side" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+    <!-- Section 3: Text Left, Image Right -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h3 class="fw-bold">🚀 Learning & Growing</h3>
+        <p>I’m still learning — and loving it! From classroom projects to experimenting late at night, coding has become a journey I’m excited to be on. This is just the beginning!</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/learning.jpg" alt="Learning in progress" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <footer class="text-center text-lg-start border-top mt-5">
     <div class="container p-4">
       <div class="row">
@@ -45,20 +81,16 @@
         </div>
         <div class="col-lg-6 mb-4 text-lg-end">
           <h5 class="text-primary">Follow Me</h5>
-          <a href="https://www.instagram.com/heyyyy___avniii?igsh=d3R2eDQ0dWduNW1s&utm_source=qr" 
-             class="me-3 text-dark" target="_blank" aria-label="Instagram">
+          <a href="https://www.instagram.com/heyyyy___avniii?igsh=d3R2eDQ0dWduNW1s&utm_source=qr" class="me-3 text-dark" target="_blank">
             <i class="bi bi-instagram fs-5"></i>
           </a>
-          <a href="https://x.com/AAR0507" 
-             class="me-3 text-dark" target="_blank" aria-label="Twitter">
+          <a href="https://x.com/AAR0507" class="me-3 text-dark" target="_blank">
             <i class="bi bi-twitter fs-5"></i>
           </a>
-          <a href="https://snapchat.com/t/FB3d6ouN" 
-             class="me-3 text-dark" target="_blank" aria-label="Snapchat">
+          <a href="https://snapchat.com/t/FB3d6ouN" class="me-3 text-dark" target="_blank">
             <i class="bi bi-snapchat fs-5"></i>
           </a>
-          <a href="mailto:coolavniroy@gmail.com" 
-             class="text-dark" target="_blank" aria-label="Email">
+          <a href="mailto:coolavniroy@gmail.com" class="text-dark" target="_blank">
             <i class="bi bi-envelope-fill fs-5"></i>
           </a>
         </div>
@@ -68,6 +100,8 @@
       <small>© 2025 AVNI Portfolio. All rights reserved.</small>
     </div>
   </footer>
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
