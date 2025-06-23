@@ -1,44 +1,99 @@
-body{
-  height:100vh
+/* Base Styles */
+body {
+  min-height: 100vh;
+  padding-top: 0px;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Profile Image in Navbar */
 .profile-img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
-.myanimatedname{
-  font-size: 5rem;
-  font-weight: bolder;
-  position: relative;
-  z-index: 2;
-  color: rgb(0, 153, 255);
-  animation: wave 2s ease-in-out forwards;
+
+/* Animated Hero Name */
+.myanimatedname {
+  font-size: 4.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  animation: wave 1.8s ease-in-out forwards;
   opacity: 0;
-}
-.myanimatedname7{
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
   position: relative;
   z-index: 2;
-  color: rgb(0, 153, 255);
-  animation: wave 2s ease-in-out forwards;
 }
-@keyframes wave{
-  0%{
-    transform:translateY(50px);
-    opacity:0;
+
+/* Animated Subtitle */
+.myanimatedname7 {
+  font-size: 1.4rem;
+  color: #e0f0ff;
+  animation: wave 1.8s ease-in-out forwards;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+/* Wave animation */
+@keyframes wave {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
-    transform:translateY(0);
-    opacity:1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
+/* Hero Section */
 #Hero {
-  background-image: url('WIN_20230316_20_23_17_Pro.jpg');
-  background-size:cover;
-  background-position:center;
-  min-height:100vh;
-  animation:wave 2s ease-in-out forwards;
+  background-image: url('WhatsApp\ Image\ 2025-06-20\ at\ 21.19.46_a38691a9.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: wave 2s ease-in-out forwards;
+  text-align: center;
 }
+
+/* Dark overlay on Hero background */
+#Hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Bring text above the overlay */
+#Hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animated Button */
+.btn-danger {
+  transition: all 0.3s ease-in-out;
+  background-color: #dc3545;
+  border: none;
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2);
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(220, 53, 69, 0.3);
+}
+
+/* Footer Styling */
 footer {
   background-color: #f8f9fa;
   padding: 20px 0;
@@ -48,4 +103,10 @@ footer {
 
 footer a {
   text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0d6efd;
 }
