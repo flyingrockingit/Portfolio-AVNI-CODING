@@ -1,21 +1,16 @@
-/* Base Styles */
-body {
+ body {
   min-height: 100vh;
   padding-top: 0px;
   background-color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* Profile Image in Navbar */
-.profile-img {
+ .profile-img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
-
-/* Animated Hero Name */
-.myanimatedname {
+ .myanimatedname {
   font-size: 4.2rem;
   font-weight: 800;
   color: #ffffff;
@@ -26,9 +21,7 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/* Animated Subtitle */
-.myanimatedname7 {
+ .myanimatedname7 {
   font-size: 1.4rem;
   color: #e0f0ff;
   animation: wave 1.8s ease-in-out forwards;
@@ -36,9 +29,7 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/* Wave animation */
-@keyframes wave {
+ @keyframes wave {
   0% {
     transform: translateY(50px);
     opacity: 0;
@@ -47,9 +38,7 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-/* Hero Section */
+ }
 #Hero {
   background-image: url('WhatsApp\ Image\ 2025-06-20\ at\ 21.19.46_a38691a9.jpg');
   background-size: cover;
@@ -63,50 +52,94 @@ body {
   animation: wave 2s ease-in-out forwards;
   text-align: center;
 }
-
-/* Dark overlay on Hero background */
-#Hero::before {
+ #Hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-
-/* Bring text above the overlay */
-#Hero > * {
+ #Hero > * {
   position: relative;
   z-index: 2;
 }
-
-/* Animated Button */
-.btn-danger {
+ .btn-danger {
   transition: all 0.3s ease-in-out;
   background-color: #dc3545;
   border: none;
   box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2);
 }
-
-.btn-danger:hover {
+ .btn-danger:hover {
   background-color: #bb2d3b;
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(220, 53, 69, 0.3);
 }
+.collage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.collage-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.collage-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 0.8s ease forwards;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-/* Footer Styling */
+.animated-img.delay-1 { animation-delay: 0.2s; }
+.animated-img.delay-2 { animation-delay: 0.4s; }
+.animated-img.delay-3 { animation-delay: 0.6s; }
+.animated-img.delay-4 { animation-delay: 0.8s; }
+.animated-img.delay-5 { animation-delay: 1s; }
+.animated-img.delay-6 { animation-delay: 1.2s; }
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 1.5s; 
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#skill{
+  border-radius: 10px;
+  box-shadow: 0.5px 4px 8px rgba(255, 48, 7, 0.696);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+#skill:hover{
+  transform: translate3d(-50px);
+}
+
 footer {
   background-color: #f8f9fa;
   padding: 20px 0;
   font-size: 0.9rem;
   color: #6c757d;
 }
-
-footer a {
+ footer a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
 }
-
-footer a:hover {
+ footer a:hover {
   color: #0d6efd;
 }
