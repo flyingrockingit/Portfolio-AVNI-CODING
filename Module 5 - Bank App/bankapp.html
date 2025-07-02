@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BANK APP</title>
+  <link rel="stylesheet" href="bank.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h4 class="user-name">👤 Welcome</h4>
+    <p class="account-number">Account Number: <strong>xxx-xxxx-xx</strong></p>
+    <h1>🏦 My Bank App</h1>
+    <div class="balance-box">
+      <h2>Current Balance:</h2>
+      <span id="balance">$0.00</span>
+    </div>
+    <div class="input-box">
+      <input type="number" id="amount" placeholder="Enter amount..." />
+    </div>
+    <div class="button-box">
+      <button id="credit-btn">➕ Credit</button>
+      <button id="debit-btn">➖ Debit</button>
+      <button id="reset-btn">🔁 Reset</button>
+    </div>
+    <h3>📜 Transaction History</h3>
+    <ul id="transaction-list">
+      <li>No transactions yet</li>
+    </ul>
+  </div>
+  <script src="bank.js"></script>
+</body>
+</html>

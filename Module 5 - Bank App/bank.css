@@ -1,0 +1,120 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f2f2f2;
+  padding: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.account-number {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.balance-box {
+  background-color: #e3f2e1;
+  border: 2px solid #c7dfc4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#balance {
+  color: green;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.input-box input {
+  padding: 10px;
+  width: 80%;
+  font-size: 1em;
+  border: 2.5px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.button-box {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 2px solid steelblue;
+  transition: all 0.3s ease;
+}
+
+#credit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#credit-btn:hover {
+  background-color: #3e8e41;
+}
+
+#debit-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+#debit-btn:hover {
+  background-color: #d32f2f;
+}
+
+#reset-btn {
+  background-color: #999;
+  color: white;
+  border-color: #666;
+}
+
+#reset-btn:hover {
+  background-color: #666;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+li {
+  background-color: #ffffff;
+  padding: 12px;
+  margin: 8px auto;
+  width: 90%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
